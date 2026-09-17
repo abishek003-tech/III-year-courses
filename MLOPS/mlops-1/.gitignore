@@ -1,0 +1,27 @@
+# Python Virtual Environment
+venv/
+ENV/
+env/
+
+# MLflow Runs & Artifacts
+mlruns/
+.mlflow/
+
+# DVC local files
+.dvc/cache/
+.dvc/tmp/
+
+# Data files tracked by DVC (Git ignores the actual dataset file)
+data/dataset.csv
+
+# Compiled Python files & caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
