@@ -1,0 +1,43 @@
+# ── Virtual environments ──
+venv/
+.venv/
+env/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# ── MLflow ──
+mlruns/
+
+# ── DVC ──
+/data/student-mat.csv
+/data/student.zip
+
+# ── Saved models (reproducible via pipeline) ──
+models/*.pkl
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Secrets ──
+.env
+*.key
+*.pem
+
+# ── Misc ──
+*.log
+.pytest_cache/
+htmlcov/
+.coverage
