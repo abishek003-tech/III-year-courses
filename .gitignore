@@ -1,0 +1,9 @@
+**/.venv*/
+**/venv/
+**/__pycache__/
+*.py[cod]
+~$*
+.env
+MLOPS/exp-1/models/*.joblib
+MLOPS/exp-1/mlruns/
+MLOPS/exp-1/.dvc/cache/
