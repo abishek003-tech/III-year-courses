@@ -1,0 +1,45 @@
+# ============================================================
+# params.yaml
+# Centralised configuration for the MLOps pipeline.
+# Author: Abi (Abhishek S.) | KGiSL Institute of Technology
+# ============================================================
+
+data:
+  url: "https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip"
+  raw_zip: "data/student.zip"
+  csv_file: "data/student-mat.csv"
+  separator: ";"
+
+features:
+  drop_columns: ["G1", "G2"]     # removed to prevent grade-leakage
+  target: "G3"
+  test_size: 0.2
+  random_state: 42
+
+models:
+  linear_regression:
+    fit_intercept: true
+  random_forest:
+    n_estimators: 200
+    max_depth: 10
+    min_samples_split: 5
+    random_state: 42
+  gradient_boosting:
+    n_estimators: 200
+    learning_rate: 0.05
+    max_depth: 4
+    random_state: 42
+
+selection:
+  metric: "rmse"          # lower is better; used to pick the best model
+  direction: "minimize"
+
+paths:
+  model_dir: "models"
+  best_model: "models/best_model.pkl"
+  preprocessor: "models/preprocessor.pkl"
+  metrics_json: "reports/metrics.json"
+  metrics_csv: "reports/model_comparison.csv"
+  charts_dir: "reports/charts"
+  mlflow_tracking_uri: "mlruns"
+  mlflow_experiment: "student_performance_prediction"

@@ -1,0 +1,38 @@
+# Student Performance MLOps - Requirements
+# Author: Abi (Abhishek S.) | KGiSL Institute of Technology
+# Python 3.12 compatible
+
+# Core Data Science
+pandas==2.2.3
+numpy==2.2.5
+scikit-learn==1.6.1
+joblib==1.4.2
+
+# Visualization
+matplotlib==3.10.1
+seaborn==0.13.2
+
+# MLflow Experiment Tracking
+mlflow==2.22.0
+
+# DVC Data Versioning
+dvc==3.59.1
+
+# Prefect Workflow Automation
+prefect==3.4.0
+
+# Prediction API
+fastapi==0.115.12
+uvicorn==0.34.2
+pydantic==2.11.3
+
+# HTTP requests (for data download)
+requests==2.32.3
+
+# Testing
+pytest==8.3.5
+pytest-cov==6.1.0
+
+# Utilities
+python-dotenv==1.1.0
+PyYAML==6.0.2
